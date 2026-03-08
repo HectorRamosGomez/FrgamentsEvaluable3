@@ -20,6 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".DescripcionAnime1"/>
+        <activity android:name=".DescripcionAnime2"/>
+        <activity android:name=".DescripcionAnime3"/>
+        <activity android:name=".DescripcionAnime4"/>
     </application>
 
 </manifest>
