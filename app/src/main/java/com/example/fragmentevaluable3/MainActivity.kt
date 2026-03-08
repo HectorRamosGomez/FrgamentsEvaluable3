@@ -34,15 +34,16 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
+        val btn1 = findViewById<ImageButton>(R.id.btnAnime1)
+        val btn2 = findViewById<ImageButton>(R.id.btnAnime2)
+        val btn3 = findViewById<ImageButton>(R.id.btnAnime3)
+        val btn4 = findViewById<ImageButton>(R.id.btnAnime4)
+
+        btn1.setOnClickListener {
+            setContentView(R.layout.descripcion_anime1)
+        }
+
     }
-
-    val btn1 = findViewById<ImageButton>(R.id.btnAnime1)
-    val btn2 = findViewById<ImageButton>(R.id.btnAnime2)
-    val btn3 = findViewById<ImageButton>(R.id.btnAnime3)
-    val btn4 = findViewById<ImageButton>(R.id.btnAnime4)
-
-
-
     private fun remplazarFragement(fragment: Fragment){
 
         val fragmentManager = supportFragmentManager
@@ -50,4 +51,6 @@ class MainActivity : AppCompatActivity() {
         fragmentTransaction.replace(R.id.FrameLayout, fragment)
         fragmentTransaction.commit()
     }
+
+
 }
