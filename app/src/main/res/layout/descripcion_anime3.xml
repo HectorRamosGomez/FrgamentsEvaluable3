@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/TextoPrincipalAnimeDesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:text="Oshi no ko"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imagenAnimeDesing"
+        android:layout_width="191dp"
+        android:layout_height="231dp"
+        android:layout_below="@+id/TextoPrincipalAnimeDesign"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/oshinoko" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagenAnimeDesing"
+        android:textAlignment="center"
+        android:text="Oshi no Ko (【推しの子】 lit. Mi chica idol favorita?)[1]​ es una serie de manga japonés escrita por Akasaka Aka e ilustrada por Mengo Yokoyari. La trama sigue a un médico y su paciente recientemente fallecidos que renacieron como gemelos de una famosa idol de J-Pop, los cuales navegan por los altibajos de la industria del entretenimiento del país a medida que crecen juntos a lo largo de sus vidas."
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        />
+
+
+</RelativeLayout>

@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/TextoPrincipalAnimeDesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:text="Frieren"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imagenAnimeDesing"
+        android:layout_width="191dp"
+        android:layout_height="231dp"
+        android:layout_below="@+id/TextoPrincipalAnimeDesign"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/frieren_portada" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagenAnimeDesing"
+        android:textAlignment="center"
+        android:text="Frieren: Beyond Journey's End (Sousou no Frieren) es una aclamada serie de manga y anime que sigue a una elfa maga inmortal, antigua miembro del grupo del héroe Himmel, que reflexiona sobre la vida, el tiempo y la pérdida tras una misión de 10 años para derrotar al Rey Demonio. La historia explora la nostalgia y el crecimiento emocional de la elfa al reconectar con los humanos. "
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        />
+
+
+</RelativeLayout>

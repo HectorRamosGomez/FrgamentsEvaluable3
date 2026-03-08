@@ -8,7 +8,6 @@
     android:background="#F5F5F5">
 
     <TextView
-        android:id="@+id(tvTitle)"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="DIRECTORIO ANIME"
@@ -55,15 +54,6 @@
             android:src="@drawable/oshinoko"
             android:background="?attr/selectableItemBackground" />
 
-        <ImageButton
-            android:id="@+id/btnAnime4"
-            android:layout_width="0dp"
-            android:layout_height="180dp"
-            android:layout_columnWeight="1"
-            android:layout_margin="8dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/haykiu"
-            android:background="?attr/selectableItemBackground" />
 
     </GridLayout>
 
