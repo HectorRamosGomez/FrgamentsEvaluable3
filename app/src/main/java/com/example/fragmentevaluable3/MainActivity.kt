@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             when (item.itemId) {
                 R.id.Main -> remplazarFragment(Home())
                 R.id.Login -> remplazarFragment(Login())
-                R.id.Preferencias -> remplazarFragment(Preferencias())  // Cambiado
+                R.id.Preferencias -> remplazarFragment(Preferencias())
             }
             true
         }

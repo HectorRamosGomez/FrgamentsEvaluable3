@@ -13,10 +13,8 @@ class Preferencias : PreferenceFragmentCompat(),
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.preferences, rootKey)
 
-        // Inicializar resúmenes dinámicos
         setupPreferenceSummaries()
 
-        // Configurar el botón de borrar datos
         findPreference<Preference>("borrar_datos")?.setOnPreferenceClickListener {
             mostrarDialogoConfirmacion()
             true
@@ -109,8 +107,6 @@ class Preferencias : PreferenceFragmentCompat(),
     }
 
     private fun aplicarTamanoTexto(tamano: String?) {
-        // Aquí implementarías la lógica para cambiar el tamaño del texto
-        // Por ejemplo, podrías guardar este valor y usarlo en los adapters
         val mensaje = when (tamano) {
             "pequeno" -> "Tamaño de texto: Pequeño"
             "mediano" -> "Tamaño de texto: Mediano"
@@ -137,16 +133,13 @@ class Preferencias : PreferenceFragmentCompat(),
         editor?.clear()
         editor?.apply()
 
-        // Restablecer valores por defecto
         PreferenceManager.setDefaultValues(requireContext(), R.xml.preferences, true)
 
-        // Actualizar resúmenes
         setupPreferenceSummaries()
 
         Toast.makeText(requireContext(), "Preferencias restablecidas", Toast.LENGTH_SHORT).show()
     }
 
-    // Método de utilidad para obtener preferencias desde cualquier parte de la app
     companion object {
         fun getPreferencias(sharedPreferences: SharedPreferences?): Map<String, Any> {
             val preferencias = mutableMapOf<String, Any>()

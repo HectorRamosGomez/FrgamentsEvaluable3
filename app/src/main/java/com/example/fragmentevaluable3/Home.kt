@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 
@@ -20,6 +21,7 @@ class Home : Fragment() {
         val btn2 = view.findViewById<ImageButton>(R.id.btnAnime2)
         val btn3 = view.findViewById<ImageButton>(R.id.btnAnime3)
         val btn4 = view.findViewById<ImageButton>(R.id.btnAnime4)
+        val btn5 = view.findViewById<Button>(R.id.BotonFavoritos)
 
         btn1.setOnClickListener {
             val intent = Intent(activity, DescripcionAnime1::class.java)
@@ -41,6 +43,13 @@ class Home : Fragment() {
             startActivity(intent)
         }
 
+        btn5.setOnClickListener {
+            val intent = Intent(activity, Favoritos2::class.java)
+            startActivity(intent)
+        }
+
         return view
+
+
     }
 }
