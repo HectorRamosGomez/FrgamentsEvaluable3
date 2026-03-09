@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tamaños de texto -->
+    <string-array name="tamano_texto_entries">
+        <item>Pequeño</item>
+        <item>Mediano</item>
+        <item>Grande</item>
+        <item>Extra Grande</item>
+    </string-array>
+
+    <string-array name="tamano_texto_values">
+        <item>pequeno</item>
+        <item>mediano</item>
+        <item>grande</item>
+        <item>extra_grande</item>
+    </string-array>
+
+    <!-- Géneros de anime -->
+    <string-array name="generos_anime_entries">
+        <item>Shonen</item>
+        <item>Seinen</item>
+        <item>Isekai</item>
+        <item>Romance</item>
+        <item>Slice of Life</item>
+        <item>Deportes</item>
+        <item>Fantasía</item>
+        <item>Aventura</item>
+        <item>Comedia</item>
+    </string-array>
+
+    <string-array name="generos_anime_values">
+        <item>shonen</item>
+        <item>seinen</item>
+        <item>isekai</item>
+        <item>romance</item>
+        <item>slice_of_life</item>
+        <item>deportes</item>
+        <item>mecha</item>
+        <item>fantasia</item>
+        <item>aventura</item>
+        <item>comedia</item>
+    </string-array>
+</resources>

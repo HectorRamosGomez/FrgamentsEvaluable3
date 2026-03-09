@@ -14,15 +14,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Mostrar el fragment Home al inicio
         remplazarFragment(Home())
 
-        // Configurar el BottomNavigationView
         binding.nav.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.Main -> remplazarFragment(Home())
-                R.id.Favoritos -> remplazarFragment(Favoritos())
                 R.id.Login -> remplazarFragment(Login())
+                R.id.Preferencias -> remplazarFragment(Preferencias())  // Cambiado
             }
             true
         }

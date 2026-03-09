@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Ajustes Visuales"
+        android:summary="Configuración de apariencia de la aplicación">
+
+        <SwitchPreference
+            android:key="modo_oscuro"
+            android:title="Modo Oscuro"
+            android:summary="Activar tema oscuro en toda la aplicación"
+            android:defaultValue="false" />
+
+        <ListPreference
+            android:key="tamano_texto"
+            android:title="Tamaño del texto"
+            android:summary="Selecciona el tamaño de texto preferido"
+            android:entries="@array/tamano_texto_entries"
+            android:entryValues="@array/tamano_texto_values"
+            android:defaultValue="mediano" />
+
+        <SwitchPreference
+            android:key="mostrar_imagenes"
+            android:title="Mostrar imágenes"
+            android:summary="Cargar imágenes automáticamente"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Notificaciones"
+        android:summary="Configuración de notificaciones">
+
+        <SwitchPreference
+            android:key="notificaciones_activas"
+            android:title="Activar notificaciones"
+            android:summary="Recibir notificaciones de nuevos animes"
+            android:defaultValue="true" />
+
+        <SwitchPreference
+            android:key="notificaciones_sonido"
+            android:title="Sonido"
+            android:summary="Reproducir sonido al recibir notificaciones"
+            android:defaultValue="true"
+            android:dependency="notificaciones_activas" />
+
+        <SwitchPreference
+            android:key="notificaciones_vibracion"
+            android:title="Vibración"
+            android:summary="Vibrar al recibir notificaciones"
+            android:defaultValue="false"
+            android:dependency="notificaciones_activas" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
